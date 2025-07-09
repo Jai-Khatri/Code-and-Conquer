@@ -52,7 +52,6 @@ const Home: React.FC = () => (
         <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
           Hey there, I'm <span className="text-teal-400">Jai</span>
         </h1>
-        <h2 className='font-extrabold text-2xl md:text-3xl mb-4'>(not J-A-Y)</h2>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
