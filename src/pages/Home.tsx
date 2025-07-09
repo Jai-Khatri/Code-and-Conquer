@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion, type Variants } from 'framer-motion';
 import { Code, Database, Cloud, Terminal, LayoutGrid, PenTool, GitBranch, Box, Zap, Award, BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
+const MotionLink = motion(Link);
 
 // Variants for staggered animations
 const containerVariants: Variants = {
@@ -207,17 +209,17 @@ const Home: React.FC = () => (
           Don’t just skim. Dive headfirst into the About page, drop me a line on Contact, or marvel at my Certifications.
         </motion.p>
         <div className="flex flex-wrap justify-center gap-4">
-          {['/about','/contact','/certifications'].map((href, i) => (
-            <motion.a
+          {['/about','/contact','/creationsandcredentials'].map((href, i) => (
+            <MotionLink
               key={i}
-              href={href}
+              to={href}
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-semibold py-3 px-6 rounded-full shadow-lg"
             >
               {href.replace('/', '').charAt(0).toUpperCase() + href.slice(2)}
-            </motion.a>
+            </MotionLink>
           ))}
         </div>
       </motion.div>
