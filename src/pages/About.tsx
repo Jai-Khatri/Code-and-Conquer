@@ -86,7 +86,7 @@ const skillItems = [
  const factItems = [
   { icon: <Zap className="w-6 h-6 text-teal-400" />, fact: 'Started coding at age 12 with game jams' },
   { icon: <Activity className="w-6 h-6 text-teal-400" />, fact: 'Got offered a 50K dev job at a US company at just 18' },
-  { icon: <Globe className="w-6 h-6 text-teal-400" />, fact: 'Transitioned to web development 3 years ago' },
+  { icon: <Globe className="w-6 h-6 text-teal-400" />, fact: 'Transitioned to web development in early 2022' },
   { icon: <Github className="w-6 h-6 text-teal-400" />, fact: 'Built and deployed 10+ personal projects on GitHub' },
   { icon: <Package className="w-6 h-6 text-teal-400" />, fact: 'Paused my CS degree to gain real-world experience' },
   { icon: <BookOpen className="w-6 h-6 text-teal-400" />, fact: 'Lifelong learner: I never stop coding new challenges' }
@@ -131,7 +131,7 @@ const educationItems = [
   {
     icon: <BookOpen className="w-6 h-6 text-teal-400" />,
     title: 'Online CS Degree, Ball State University',
-    subtitle: 'Coursera (Paused due to financial constraints)'
+    subtitle: 'Coursera'
   },
   {
     icon: <Book className="w-6 h-6 text-teal-400" />,
