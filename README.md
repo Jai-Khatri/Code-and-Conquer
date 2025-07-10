@@ -1,69 +1,78 @@
-# React + TypeScript + Vite
+# Jai Khatri's Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This React-based single-page application showcases my skills, education, credentials, and contact information in a clean, animated, and responsive design.
 
-Currently, two official plugins are available:
+## 🌟 Overview
+My portfolio website serves as a central hub for potential clients, employers, and collaborators to:
+- Learn about my background and professional journey.
+- Browse my technical skills and areas of expertise.
+- Review my academic and professional credentials.
+- Navigate quickly to different sections via animated CTAs.
+- Reach out directly via email.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+- **Hero Section**: A welcoming introduction with smooth entrance animations.
+- **Skills Showcase**: Animated grid highlighting core technologies (JavaScript, TypeScript, Python, React, Node.js, AWS, etc.).
+- **Education & Credentials**: Visually engaging cards for degrees and certifications with interactive hover states.
+- **Quick Navigation CTA**: Motion-enhanced buttons for seamless client-side routing to About, Contact, and Credentials pages.
+- **Contact Section**: Direct email link with hover effects to encourage outreach.
+- **Responsive Design**: Tailwind CSS ensures the site looks great on all screen sizes.
+- **Animations**: Framer Motion variants for staggered and hover animations throughout the page.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Framework**: React (with TypeScript)
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+- **Deployment**: Vercel
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🗂️ Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+portfolio/
+├── public/                # Static assets
+│   └── index.html
+├── src/
+│   ├── pages/
+│   │   └── Home.tsx       # Main landing page with all sections
+│   ├── components/        # Reusable UI components (if any)
+│   ├── App.tsx            # Application router setup
+│   ├── index.tsx          # ReactDOM entry point
+│   └── styles/            # Global and Tailwind configuration
+├── tailwind.config.js     # Tailwind setup
+├── tsconfig.json          # TypeScript configuration
+└── vercel.json            # Vercel routing configuration
+
 ```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Available Scripts
+These scripts assume you have set up the standard tooling with React and Tailwind (omitted here).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm run dev: Launches the development server.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm run build: Bundles the app for production.
+
+npm run preview: Previews the production build locally.
+
+---
+
+## 🤝 Contributing
+
+Well........You can't :)
+
+---
+
+
+## 📬 Contact
+Email: jaikhatri1110@gmail.com
+
+LinkedIn: linkedin.com/in/jai-khatri-153908249
+
+---
+## Author 
+
+Created by ☕ Code by Jai
